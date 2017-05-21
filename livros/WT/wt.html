@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../turn.min.js"></script>
+
+<style type="text/css">
+body{
+	background-image: url(../mesa.jpg);
+}
+#magazine{
+	width:70%;
+	height:752px;
+}
+#magazine .turn-page{
+	background-color:#ccc;
+	background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+<a href="../../index.php"><img src="../sair.png" style="position: absolute; width: 4%; margin-left: 95%;"></a>
+<img src="../seta.png" style="position: absolute; width: 4%; margin-top: 20%; margin-left: 70%;">
+<img src="../seta.png" style="position: absolute; width: 4%; margin-top: 20%; margin-left: 75%;">
+<div id="magazine">
+	<div style="background-image:url(pages/1.jpg);"></div>
+	<div style="background-image:url(pages/2.jpg);"></div>
+	<div style="background-image:url(pages/3.jpg);"></div>
+	<div style="background-image:url(pages/4.jpg);"></div>
+	<div style="background-image:url(pages/5.jpg);"></div>
+	<div style="background-image:url(pages/6.jpg);"></div>
+</div>
+
+
+<script type="text/javascript">
+
+	$(window).ready(function() {
+		$('#magazine').turn({
+							display: 'double',
+							acceleration: true,
+							gradients: !$.isTouch,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									/*console.log('Current view: ', $(this).turn('view'));*/
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			$('#magazine').turn('previous');
+		else if (e.keyCode==39)
+			$('#magazine').turn('next');
+			
+	});
+
+</script>
+
+</body>
+</html>

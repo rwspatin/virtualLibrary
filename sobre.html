@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		
+		<title>Virtual Library - Sobre</title>
+		
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!--Let browser know website is optimized for mobile-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!--SEO Tags-->
+		<meta name="description" content="Leia os melhores livros de autores independentes com uma forma de leitura inovadora">
+		
+		<meta Name="robots" content="index">
+		<meta Name="robots" content="follow">
+		
+		<meta name="keywords" content="livros, autores independentes, contos, sobre a empresa">
+		
+		<meta name="author" content="Renan Winter Spatin">
+		<meta name="author" content="Nikollas Gabriel Assumpção">
+		<meta name="author" content="Pedro Henrique Ventura Rodrigues">
+		<meta name="author" content="Elson Lima Junior">
+		<!--end SEO tags-->
+
+		<!--Materialize-->
+			
+			<!--Import materialize.css-->
+	      	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+			
+			<!--fonts googles-->
+			<link type="text/css" rel="stylesheet" href="css/google-fonts.css"/>
+				 
+	 	
+	 	<!--end materialize-->
+
+	 	<!--folha de estilo extra-->
+	 	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	 	<!--end folha de estilo-->
+
+	</head>
+
+	<body>
+		
+		<!-- Sidebar -->
+		<div id="wrapper">
+	        <div id="sidebar-wrapper" class="blue-grey darken-4">
+	            <ul class="sidebar-nav">
+	                <li>
+	                	<div id="info-user-menu">
+	                		<img src="img/people.png" alt="" class="circle center" id="perfil-sidebar">
+	                		<h6 class="white-text center" id="user-namer-sidebar">User</h6>
+	                	</div>
+	                </li>
+	                <li class="collection-item search-component">
+	                	<form action="#">
+	                		<div class="input-field row search-field">
+	                			<input type="text" name="search">
+								<label for="search">Buscar</label>
+	                			<button type="submit" class="btn blue-grey darken-3" style="width: 100%">
+	                				<i class="material-icons">search</i>
+	                			</button>
+	                		</div>
+	                	</form>
+	                </li>
+
+	                <li class="indent">
+	                	<a href="#biblioteca" class="master-menu">
+	                		Livros
+	                		<i class="material-icons right">books</i>
+	                	</a>
+	                	<ul class="child-menu blue-grey darken-3">
+	                		<li>
+	                			<a href="livros/AJR/ajr.html" onClick='javascript:location.href="livros/AJR/ajr.html"' class="master-menu">
+	                				<span>As Joias de Rajy</span>
+	                				<i class="material-icons right">local_library</i>
+	                			</a>	
+	                		</li>
+	                		<li>
+	                			<a href="livros/AJF/ajf.html" onClick='javascript:location.href="livros/AJF/ajf.html"' class="master-menu">
+	                				<span>No Rosto do Novo Mestre</span>
+	                				<i class="material-icons right">local_library</i>
+	                			</a>	
+	                		</li>
+	                		<li>
+	                			<a href="livros/WT/wt.html" onClick='javascript:location.href="livros/WT/wt.html"' class="master-menu">
+	                				<span>WT</span>
+	                				<i class="material-icons right">local_library</i>
+	                			</a>	
+	                		</li>
+	                	</ul>
+	                </li>
+
+	                <li class="indent">
+	                	<a href="sobre.html" onClick='javascript:location.href="sobre.html"' class="master-menu">
+	                		Sobre
+	                		<i class="material-icons right"></i>
+	                	</a>
+	                </li>
+	                <li class="indent">
+	                	<a href="javascript:void(0)" class="master-menu">
+	                		More
+	                		<i class="material-icons right">add</i>
+	                	</a>
+	                	<ul class="child-menu blue-grey darken-3">
+	                		<li>
+	                			<a href="javascript:void(0)" onClick='javascript:location.href="sobreAutor.html"' class="master-menu">
+	                				<span>Sobre o Autor</span>
+	                				<i class="material-icons right">perm_identity</i>
+	                			</a>	
+	                		</li>
+	                	</ul>
+	                </li>
+	            </ul>
+			</div>
+		</div>
+		<!--header -->
+		<header class="navbar-fixed">
+			<!-- a cor do menu é no nav-->
+			<nav class="blue-grey">
+				<div class="nav-wrapper">
+					<ul>
+						<li>
+							<a href="javascript:void(0)" id="btn-sidebar">
+								<i class="material-icons">dehaze</i>
+							</a>
+						</li>
+						<li>
+							<a href="index.php" id="header-logo">
+								Virtual Library
+							</a>
+						</li>
+					</ul>
+					
+					<ul class="right hide-on-med-and-down">
+						<li>
+							<a href="javascript:void(0)" id="btn-search-add">
+								<i class="material-icons">search</i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" id="btn-dropdown-perfil" data-activates="dropdown-perfil">
+								<img src="img/people.png" alt="" class="circle left mini-perfil">
+								<span>User</span>
+								<i class="material-icons right">arrow_drop_down</i>
+							</a>
+							<!-- Dropdown do perfil -->
+							<ul id='dropdown-perfil' class='dropdown-content blue-grey grid'>
+								<li><a href='javascript:alert("Essa Função não esta pronta")'>Perfil</a></li>
+								<li><a href='javascript:alert("Essa Função não esta pronta")'>Configurações</a></li>
+								<li><a href='javascript:alert("Essa Função não esta pronta")'>Logout</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<i class="material-icons">share</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--end header menu-->
+
+		<!--main-->
+		<main>
+		    
+		    <!--conteudo-->
+		    <div class="row grey lighten-1">
+			    <div class="container ">
+			    	<br/>
+			    	<h5>Quem Somos</h5>
+			    	<p>
+			    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    	</p>
+			    </div>
+			    <div class="container">
+			    	<br/>
+			    	<h5>Sobre os livros</h5>
+			    	<p>
+			    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    	</p>
+			    </div>
+		    </div>
+		    <!--end conteudo-->
+	    </main>
+		<!--end main-->
+		
+		<footer class="page-footer grey lighten-4">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5>Inscreva-se para receber novidades</h5>
+						<form action="">
+							<div class="row no-space-row">
+								<div class="input-field col l6 s10">
+									<input type="text" name="nome">
+									<label for="name">Digite seu nome</label>
+								</div>
+							</div>
+							<div class="row no-space-row">
+								<div class="input-field col l6 s10">
+									<input type="text" name="email">
+									<label for="email">Digite seu email</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col 12">
+									<button onClick="return validar()" class="btn blue darken-1 waves-effect">Enviar</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col l6 s12">
+						<h5>Siga-nos nas redes sociais</h5>
+						<div class="row">
+							<div class="col 12">
+								<ul class="redes-sociais">
+									<li>
+										<a href="javascript:void(0)">
+											<img src="img/social/youtube.png" alt="" class="responsive-img">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<img src="img/social/facebook.png" alt="" class="responsive-img">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<img src="img/social/pinterest.png" alt="" class="responsive-img">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<img src="img/social/twitter.png" alt="" class="responsive-img">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright blue-grey darken-4">
+	            <div class="container">
+		            <h6 class="center" style="margin-top: 16px">
+		            	© PTraumer - Todos os direitos reservados
+		            </h6>
+	            </div>
+          </div>
+		</footer>
+
+		<!--Import jQuery before materialize.js-->
+    	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    	<script type="text/javascript" src="js/materialize.min.js"></script>
+    	<!--js extra-->
+	 	<script type="text/javascript" src="js/app.js"></script>
+	 	<!--end js-->
+	 	<!--Valida Formulario-->
+	 	<script type="text/javascript" src="js/validacaoFormulario.js"></script>
+	 	<!--end Valida Formulario-->
+
+	</body>
+</html>
