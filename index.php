@@ -105,7 +105,7 @@
 	                	<ul class="child-menu blue-grey darken-3">
 	                		<li>
 	                			<a href="javascript:void(0)" onClick='javascript:location.href="http://prtraumer.blogspot.com.br/p/contato.html"' class="master-menu">
-	                				<span>Blog do Autor</span>
+	                				<span>Blog do Autor - PR Traumer</span>
 	                				<i class="material-icons right">perm_identity</i>
 	                			</a>	
 	                		</li>
@@ -163,7 +163,7 @@
 		    <!--img parallax banner inicial-->
 		    <div class="parallax-container">
 		    	<div class="container">
-		    		<h4 class="white-text center parallax-title">PRTraumer</h4>
+		    		<h4 class="white-text center parallax-title">Estante</h4>
 		    	</div>
 		      <div class="parallax"><img src="img/parallax.jpg"></div>
 		    </div>
@@ -178,7 +178,7 @@
 			    		<a href="all.php" class="waves-effect waves-light btn-large blue-grey"><i class="material-icons right">list</i>All</a>
 						<a href="atr.php" class="waves-effect waves-light btn-large blue-grey"><i class="material-icons right">book</i>As Joias de Rajy</a>
 						<a href="atf.php" class="waves-effect waves-light btn-large blue-grey"><i class="material-icons right">book</i>A Janela da Frente</a>
-						<a href="wt.php" class="waves-effect waves-light btn-large blue-grey"><i class="material-icons right">book</i>WT</a>
+						<a href="wt.php" class="waves-effect waves-light btn-large blue-grey"><i class="material-icons right">book</i>Gotas da Guerra</a>
 			    	</div>
 
 			    	<div id="conteudo">
@@ -277,7 +277,7 @@
 			<div class="footer-copyright blue-grey darken-4">
 	            <div class="container">
 		            <h6 class="center" style="margin-top: 16px">
-		            	© PTraumer - Todos os direitos reservados
+		            	© Virtual Library - Todos os direitos reservados
 		            </h6>
 	            </div>
           </div>
